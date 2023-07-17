@@ -1,10 +1,17 @@
 #include <iostream>
 
-int main() {
-    const double PI = 3.14159;
-    double radius = 10;
-    double circ = 2 * PI * radius;
+namespace first{
+    int x = 1;
+}
 
-    std::cout << circ << "cm";
+namespace second {
+    int x = 2;
+}
+
+int main() {
+    using namespace second;
+
+    std::cout << x;
+
     return 0;
 }
