@@ -3,12 +3,16 @@
 
 int main() {
 
-    double x = (int) 3.14;
+    std::string name;
+    int age;
 
-    char y = 100;
-    std::cout << y << '\n';
+    std::cout << "what is your full name?";
+    std::getline(std::cin >> std::ws, name);
 
-    std::cout << x;
+    std::cout << "Hello, " << name << '\n';
+    std::cout << "And what is your age?" << '\n';
+    std::cin >> age;
 
+    std::cout << "Thanks! You are " << age;
     return 0;
 }
