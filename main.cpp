@@ -2,11 +2,14 @@
 
 int main() {
 
-    // This is a comment. Just the same as in C#, Java etc..
-    /*
-     * And a long comment...
-     */
-    std::cout << "I like pizza" << '\n';
-    std::cout << "It's really good!" << std::endl;
+    int age = 20;
+    double y = 7.5;
+    char grade = 'A';
+    bool isTrue = true;
+    std::string name = "Jerome";
+
+    std::cout << "Hello ," << name << '\n';
+    std::cout << "You are " << age << " years old!";
+
     return 0;
 }
