@@ -3,13 +3,12 @@
 
 int main() {
 
-    int students = 6 - 5 + 4 * 3 / 2;
-    students++;
-    students--;
+    double x = (int) 3.14;
 
-    students*=2;
-    int remainder = students % 3;
+    char y = 100;
+    std::cout << y << '\n';
 
-    std::cout << remainder;
+    std::cout << x;
+
     return 0;
 }
