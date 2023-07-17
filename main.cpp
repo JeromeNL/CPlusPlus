@@ -5,14 +5,15 @@ int main() {
 
     int age;
 
-    std::cout << "Enter your age: ";
-    std::cin >> age;
-
-    if(age >= 18){
-        std::cout << "Welcome to the site!";
-    }
-    else {
-        std::cout << "You are too young!";
+    switch(age){ // same as C#
+        case 1:
+            std::cout << "You are a baby";
+            break;
+        case 2:
+            std::cout << "You are a child";
+            break;
+        default:
+            std::cout << "Default!";
     }
 
     return 0;
