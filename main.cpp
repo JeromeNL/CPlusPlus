@@ -3,21 +3,17 @@
 
 int main() {
 
-    double a;
-    double b;
-    double c;
+    int age;
 
-    std::cout << "Enter side A: ";
-    std:: cin >> a;
+    std::cout << "Enter your age: ";
+    std::cin >> age;
 
-    std::cout << "Enter side B: ";
-    std::cin >> b;
-
-    a = pow(a, 2);
-    b = pow(b, 2);
-    c = sqrt(a + b);
-
-    std::cout << "side C: " << c;
+    if(age >= 18){
+        std::cout << "Welcome to the site!";
+    }
+    else {
+        std::cout << "You are too young!";
+    }
 
     return 0;
 }
