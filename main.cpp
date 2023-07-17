@@ -1,15 +1,10 @@
 #include <iostream>
 
 int main() {
+    const double PI = 3.14159;
+    double radius = 10;
+    double circ = 2 * PI * radius;
 
-    int age = 20;
-    double y = 7.5;
-    char grade = 'A';
-    bool isTrue = true;
-    std::string name = "Jerome";
-
-    std::cout << "Hello ," << name << '\n';
-    std::cout << "You are " << age << " years old!";
-
+    std::cout << circ << "cm";
     return 0;
 }
