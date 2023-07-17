@@ -2,17 +2,19 @@
 
 
 int main() {
+    double x = 3.99;
+    double y = 4;
+    double z;
 
-    std::string name;
-    int age;
+    z = std::max(x, y);
+    z = pow(2, 4);
+    z = sqrt(9);
+    z = abs(-3);
+    z = round (x);
+    z = ceil(x);
+    z = floor(x);
 
-    std::cout << "what is your full name?";
-    std::getline(std::cin >> std::ws, name);
+    std::cout << z;
 
-    std::cout << "Hello, " << name << '\n';
-    std::cout << "And what is your age?" << '\n';
-    std::cin >> age;
-
-    std::cout << "Thanks! You are " << age;
     return 0;
 }
