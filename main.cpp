@@ -7,7 +7,9 @@ int main() {
     // same as Java
    std::string cars[] = {"vw", "volvo", "suzuki"};
 
-   std::cout << cars[1];
+   std::cout << cars[1] << '\n';
+
+   std::cout << sizeof(cars);
 
     return 0;
 }
