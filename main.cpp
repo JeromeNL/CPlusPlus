@@ -4,8 +4,10 @@ int myNum = 2; // Should be avoided as much as possible
 
 
 int main() {
-    int myNum = 1;
-    std::cout << ::myNum;
+    // same as Java
+   std::string cars[] = {"vw", "volvo", "suzuki"};
+
+   std::cout << cars[1];
 
     return 0;
 }
