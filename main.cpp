@@ -1,25 +1,19 @@
 #include <iostream>
 
 
-double square(double length);
+void bakePizza();
 
-double cube(double length);
-
+void bakePizza(std::string topping1);
 
 int main() {
+    bakePizza("Kaas");
 
-  std::cout << square(4);
-
-    std::cout << cube(4);
-
-    return 0;
 }
 
-
-double square (double length){
-    return length * length;
+void bakePizza(){
+    std::cout << "Here is your pizza!\n";
 }
 
-double cube(double length){
-    return length * length * length;
+void bakePizza(std::string topping1){
+    std::cout << "Here is your " << topping1 << " pizza!";
 }
