@@ -1,13 +1,18 @@
 #include <iostream>
 #include <ctime>
 
+void happyBirthday(std::string name);
+
+
 int main() {
 
-  srand(time(NULL));
+    happyBirthday("Pietje");
 
-  int num = (rand() % 20) + 1;
+    return 0;
+}
 
-  std::cout << num;
-
-  return 0;
+void happyBirthday(std::string name){
+    std::cout << "HBD!" << name;
+    std::cout << "HBD!";
+    std::cout << "HBD!";
 }
