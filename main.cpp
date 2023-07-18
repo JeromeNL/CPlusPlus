@@ -1,19 +1,12 @@
 #include <iostream>
 
+int myNum = 2; // Should be avoided as much as possible
 
-void bakePizza();
-
-void bakePizza(std::string topping1);
 
 int main() {
-    bakePizza("Kaas");
+    int myNum = 1;
+    std::cout << ::myNum;
 
+    return 0;
 }
 
-void bakePizza(){
-    std::cout << "Here is your pizza!\n";
-}
-
-void bakePizza(std::string topping1){
-    std::cout << "Here is your " << topping1 << " pizza!";
-}
