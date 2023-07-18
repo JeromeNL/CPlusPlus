@@ -1,13 +1,13 @@
 #include <iostream>
-
+#include <ctime>
 
 int main() {
 
-   for(int i = 0; i < 15; i++){
-       for(int j = 0; j < 5; j++){
+  srand(time(NULL));
 
-       }
-   }
+  int num = (rand() % 20) + 1;
 
-    return 0;
+  std::cout << num;
+
+  return 0;
 }
