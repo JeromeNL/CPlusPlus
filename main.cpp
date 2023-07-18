@@ -3,11 +3,12 @@
 
 int main() {
 
-    std::string cars[][3] = {{"Mustang", "Escape", "F-150"},
-                            {"Corvette", "Equinox", "Silverado"},
-                            {"Golf", "Polo", "Up"}};
+    std::string name = "Bro";
+    int age = 20;
+    bool student = true;
 
-    std::cout << cars[1][2];
+
+    std::cout << &name << '\n';
 
     return 0;
 }
