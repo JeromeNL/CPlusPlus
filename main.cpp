@@ -4,10 +4,9 @@
 int main() {
 
    for(int i = 0; i < 15; i++){
-       if(i == 13){
-           continue;
+       for(int j = 0; j < 5; j++){
+
        }
-       std::cout << i;
    }
 
     return 0;
