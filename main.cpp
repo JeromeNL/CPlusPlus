@@ -1,14 +1,19 @@
 #include <iostream>
 
-template<typename T, typename U>
+struct student{
+    std::string name;
+    double gpa;
+    bool enrolled;
 
-auto max(T x, U y){
-    return (x > y) ? x : y;
-}
+};
 
 
 int main() {
-    std::cout << max(1, 2) << '\n';
+
+    student student1;
+    student1.name = "Jerome";
+    student1.gpa = 1.2;
+    student1.enrolled = true;
 
 
     return 0;
