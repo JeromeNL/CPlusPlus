@@ -3,14 +3,22 @@
 
 int main() {
 
-    int temp;
+  std::string name;
 
-    std::cout << "Enter the temp";
-    std::cin >> temp;
+  std::cout << "Enter your name";
+  std::cin >> name;
 
-    if(temp > 18 && temp < 28){
-        std::cout << "Nice weather!";
+    if(name.length() > 12){
+        std::cout << "What a long name!";
     }
+
+    name.empty(); // returns true when empty
+    name.append("@gmail.com");
+    name.at(0);
+    name.insert(0, "@");
+    name.find(' ');
+    name.erase(3, 4);
+
 
     return 0;
 }
