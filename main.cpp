@@ -2,19 +2,16 @@
 
 int main() {
 
-    std::string name = "Bro";
-    int age = 20;
-    std::string freePizzas[3] {"pizza1", "pizza2", "pizza3"};
+    int *pointer = nullptr;
+    int x = 123;
 
+    pointer = &x;
 
-
-    std::string *pName = &name;
-    int *pAge = &age;
-    std::string *pFreePizzas = freePizzas;
-
-    std::cout << *pName;
-    std::cout << *pAge;
-    std::cout << freePizzas;
+    if(pointer == nullptr){
+        std::cout << "address was nog assigned";
+    } else{
+        std::cout << "address was assigned";
+    }
 
     return 0;
 }
