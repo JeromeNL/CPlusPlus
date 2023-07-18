@@ -2,13 +2,12 @@
 
 
 int main() {
-    const int size = 150;
 
-    std::string foods[size];
+    std::string cars[][3] = {{"Mustang", "Escape", "F-150"},
+                            {"Corvette", "Equinox", "Silverado"},
+                            {"Golf", "Polo", "Up"}};
 
-    fill(foods, foods + size, "pizza");
-
-
+    std::cout << cars[1][2];
 
     return 0;
 }
