@@ -3,18 +3,9 @@
 
 int main() {
 
-    int age;
+    int grade = 65;
 
-    switch(age){ // same as C#
-        case 1:
-            std::cout << "You are a baby";
-            break;
-        case 2:
-            std::cout << "You are a child";
-            break;
-        default:
-            std::cout << "Default!";
-    }
+    grade >= 60 ? std::cout << "Pass" : std::cout << "Fail";
 
     return 0;
 }
