@@ -1,23 +1,24 @@
 #include <iostream>
 
-
-void printInfo(const std::string name, const int age);
-
-
 int main() {
 
     std::string name = "Bro";
     int age = 20;
+    std::string freePizzas[3] {"pizza1", "pizza2", "pizza3"};
 
-    printInfo(name, age);
+
+
+    std::string *pName = &name;
+    int *pAge = &age;
+    std::string *pFreePizzas = freePizzas;
+
+    std::cout << *pName;
+    std::cout << *pAge;
+    std::cout << freePizzas;
 
     return 0;
 }
 
 
-void printInfo(const std::string name, const int age){
-    std::cout << name << '\n';
-    std::cout << age << '\n';
-}
 
 
