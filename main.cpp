@@ -1,10 +1,18 @@
 #include <iostream>
 
 class Student{
-public:
+private:
     std::string name;
     int age;
     double gpa;
+public:
+    std::string getName(){
+        return name;
+    }
+
+    void setName(std::string name){
+        this->name = name;
+    }
 
     Student(std::string name, int age, double gpa){
         this->name = name;
