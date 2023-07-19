@@ -1,25 +1,21 @@
 #include <iostream>
 
-class Human{
+class Student{
 public:
     std::string name;
-    std::string occupation;
     int age;
+    double gpa;
 
-    void eat(){
-        std::cout << "This person is eating";
+    Student(std::string name, int age, double gpa){
+        this->name = name;
+        this->age = age;
+        this->gpa = gpa;
     }
-
-    void drink(){
-        std::cout << "This person is drinking";
-    }
-
 };
 
 int main() {
 
-    Human human1;
-
+    Student student1("Jerome", 20, 1.3);
 
     return 0;
 }
