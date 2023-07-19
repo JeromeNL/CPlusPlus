@@ -1,38 +1,23 @@
 #include <iostream>
 
-class Student{
-private:
-    std::string name;
-    int age;
-    double gpa;
+class Animal {
 public:
-    std::string getName(){
-        return name;
-    }
+    bool alive = true;
 
-    void setName(std::string name){
-        this->name = name;
+    void eat(){
+        std::cout << "This animal is eating";
     }
+};
 
-    Student(std::string name, int age, double gpa){
-        this->name = name;
-        this->age = age;
-        this->gpa = gpa;
-    }
-
-    Student(std::string name){
-        this->name = name;
-        this->age = age;
-        this->gpa = gpa;
-    }
-
+class Dog : public Animal{
 
 };
 
 int main() {
 
-    Student student1("Jerome", 20, 1.3);
-    Student student2("Kees");
+    Dog dog;
+
+    std::cout << dog.alive;
     return 0;
 }
 
